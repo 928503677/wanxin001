@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="page">
+    <!-- header -->
+    <div class="header"></div>
+    <!-- header over-->
+
+    <div class="main"></div>
+
+    <!--footer-->
+    <div class="footer"></div>
+    <!--footer over-->
+</div>
+<script>
+    // 导入公共模板
+    $(function() {
+        $(".header").load("header.html");
+        $(".main").load("home.html");
+        $(".footer").load("footer.html");
+    });
+</script>
+</body>
+</html>
